@@ -37,4 +37,29 @@
     
   </entry>
   
+  <entry>
+    <title>初学Reactd的注意</title>
+    <link href="http://yoursite.com/2019/07/15/%E5%88%9D%E5%AD%A6Reactd%E7%9A%84%E6%B3%A8%E6%84%8F/"/>
+    <id>http://yoursite.com/2019/07/15/初学Reactd的注意/</id>
+    <published>2019-07-15T06:48:22.000Z</published>
+    <updated>2019-07-26T07:07:26.850Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/.com//react.png" alt><br>1.在 JavaScript class 中，每次你定义其子类的构造函数时，都需要调用 super 方法<br>因此，在所有含有构造函数的的 React 组件中，构造函数必须以 super(props) 开头。</p><p>2.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">onClick=&#123;() =&gt; alert(<span class="string">'click'</span>)&#125; </span><br><span class="line">onClick=&#123;<span class="function"><span class="title">function</span></span>() &#123; alert(<span class="string">'click'</span>); &#125;</span><br></pre></td></tr></table></figure><p>3.props是参数</p><p>4.有一个命名规范，通常会将代表事件的监听 prop 命名为 on[Event]，将处理事件的监听方法命名为 handle[Event] 这样的格式</p><p>5.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">onClick=&#123;() =&gt; this.props.onClick()&#125;</span><br></pre></td></tr></table></figure><p>改成了更短的 </p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">onClick=&#123;props.onClick&#125;</span><br></pre></td></tr></table></figure><p>6.我们强烈推荐，每次只要你构建动态列表的时候，都要指定一个合适的 key。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/.com//react.png&quot; alt&gt;&lt;br&gt;1.在 JavaScript class 中，每次你定义其子类的构造函数时，都需要调用 super 方法&lt;br&gt;因此，在所有含有构造函数的的 React 组件中，构造函数必须以 super(props)
+      
+    
+    </summary>
+    
+      <category term="React教程" scheme="http://yoursite.com/categories/React%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="html" scheme="http://yoursite.com/tags/html/"/>
+    
+  </entry>
+  
 </feed>
